@@ -1,0 +1,101 @@
+/* ## BASE ## */
+* { 
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    background: rgb(255, 255, 255);
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ## CLASS ## */
+.img_rad {
+    border-radius: 15%;
+}
+
+.important {
+    text-decoration: underline;
+    color: #ae5398
+}
+
+.main {
+    max-width: 900px;
+    min-width: 900px;
+    margin: auto;
+    background: rgb(255, 255, 255);
+}
+
+.prestation_img {
+    /* width: 473px;
+    height: 473px; */
+    width: 295px;
+    height: 295px;
+    display: inline-block;
+  }
+
+.textstyle {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+/* ## ID ## */
+#clignote {
+    color: #ae5398;
+    animation: clignote 3s linear infinite;
+}
+  @keyframes clignote {  
+    50% { opacity: 0; }
+}
+
+#prestation {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#presentation_img {
+    width: 100px;
+    height: 130px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+#presentation_img_wrap {
+    width: 110px;
+    height: 260px;
+    float: left;
+    clear: both;
+}
+
+#presentation {
+    min-height: 130px;
+    width: 100%;
+    margin-top: 2px;
+}
+
+#prestation_cache {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#prestation_tarif {
+    width: 474px;
+    height: 670px;
+    margin: auto;
+}
+
+#logo {
+    height: 300px;
+}

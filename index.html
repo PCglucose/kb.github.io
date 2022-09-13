@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Kimia Beaute</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="kb.css">
+        <script>
+            function toggleTarif() {
+              const tarif = document.getElementById('prestation_tarif');
+              const clignote = document.getElementById("clignote");
+              if (tarif.style.display == "none") {
+                tarif.style.display = "block";
+                clignote.innerHTML="&#10024; <b>Cacher mes prestations</b> &#10024;";
+              } else {
+                tarif.style.display = "none";
+                clignote.innerHTML="&#10024; <b>Découvrir toutes mes prestations et tarifs</b> &#10024;";
+              }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="main">
+            <header ><img id="logo" src="ressources/kb.jpg" alt="kimiabeaute"/></header>
+
+            <div id="presentation">
+                <div id="presentation_img_wrap">
+                    <img id="presentation_img" src="ressources/virginie.jpg" alt="bienvenue!">
+                </div>
+                
+                <p class="textstyle">Bonjour, je vous souhaite la bienvenue! Je m'appelle Virginie, 
+                    entrepreneuse du salon Kimia Beauté.</p></br>
+                <p class="textstyle">Envie d'un changement? Un événement à venir? Pour cela je vous propose différentes prestations telles que des 
+                    <strong>coiffures Afro-Caribbean</strong>, <strong>tresses</strong>, 
+                    <strong>vanilles</strong>, <strong>fausse locks</strong>, <strong>crochet</strong>, 
+                    <strong>départ de lock</strong>, <strong>coiffure mariée</strong> ainsi que la 
+                    <strong>manucure</strong> avec ou sans extension, <strong>rehaussement de cils</strong> 
+                    et ou <strong>mascara semi-permanent</strong>.</p></br>
+                <p class="textstyle">Laissez-vous tenter et n'hésitez pas à me contacter pour tous renseignements 
+                    complémentaires. Je vous reçois avec grand plaisir à mon domicile situé à <strong>Bobigny</strong>(93000). 
+                    Je reste joignable du <span class="important"><b>mardi au samedi</b></span>, 
+                    au <a class="important" href="tel:0782350582"><b>07.82.35.05.82 &#128241;</b></a>, à très vite!</p> 
+            </div>
+            
+            <div id="prestation">
+                <div id="prestation_cache">
+                    <a href="#prestation" id="clignote" onclick="toggleTarif()">&#10024; <b>Découvrir toutes mes prestations et tarifs</b> &#10024;</a>
+                </div>
+                <div style="display: none;" id="prestation_tarif"><img class="img_rad" src="ressources/tarif.jpg"></div>
+                <div class="prestation_img"><img class="img_rad" src="ressources/coiff01.jpg"></div>
+                <div class="prestation_img"><img class="img_rad" src="ressources/coiff02.jpg"></div>
+                <div class="prestation_img"><img class="img_rad" src="ressources/coiff03.jpg"></div>
+                <div class="prestation_img"><img class="img_rad" src="ressources/coiff04.jpg"></div>
+                <div class="prestation_img"><img class="img_rad" src="ressources/coiff05.jpg"></div>
+                <div class="prestation_img"><img class="img_rad" src="ressources/coiff06.jpg"></div>
+                <div class="prestation_img"><img class="img_rad" src="ressources/ongle01.jpg"></div>
+                <div class="prestation_img"><img class="img_rad" src="ressources/ongle02.jpg"></div>
+                <div class="prestation_img"><img class="img_rad" src="ressources/ongle03.jpg"></div>
+                <div class="prestation_img"><img class="img_rad" src="ressources/regard01.jpg"></div>
+                <div class="prestation_img"><img class="img_rad" src="ressources/coiffmari01.jpg"></div>
+                <div class="prestation_img"><img class="img_rad" src="ressources/coiffmari02.jpg"></div>
+            </div>
+
+            <footer><p>© 2022 Benjamin Boukhers tous droits réservés</p></footer>
+        </div>
+    </body>
+</html>
